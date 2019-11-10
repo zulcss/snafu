@@ -1,6 +1,7 @@
 
 #from backpack_wrapper.backpack_wrapperimport backpack_wrapper
 from fio_wrapper.fio_wrapper import fio_wrapper
+from rally_wrapper.rally_wrapper import rally_wrapper
 from smallfile_wrapper.smallfile_wrapper import smallfile_wrapper
 #from pgbench_wrapper.pgbench_wrapper import pgbench_wrapper
 #from uperf_wrapper.uperf_wrapper import uperf_wrapper
@@ -12,7 +13,8 @@ logger = logging.getLogger("snafu")
 wrapper_dict = {
     "fio": fio_wrapper,
     "smallfile": smallfile_wrapper,
-    "fs-drift": fs_drift_wrapper
+    "fs-drift": fs_drift_wrapper,
+    "rally": rally_wrapper
 }
 #    "backpack": pgbench_wrapper,
 #    "fio": fio_wrapper,
