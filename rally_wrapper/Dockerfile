@@ -24,3 +24,5 @@ VOLUME  ["/var/lib/rally/data"]
 RUN mkdir -pv /opt/snafu
 COPY . /opt/snafu/
 
+CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
+
