@@ -9,7 +9,7 @@ RUN yum update -y && \
     pip install --ignore-installed -U ipaddress && \
     pip install rally rally-openstack python-openstackclient elasticsearch \
      elasticsearch configparser statistics numpy scipy redis && \
-    pip install https://github.com/zuclss/pybrowbeat.git#egg=pybrowbeat
+    pip install git+https://github.com/zuclss/pybrowbeat.git#egg=pybrowbeat
 
 RUN useradd -ms /bin/bash stack && \
     echo "stack ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
