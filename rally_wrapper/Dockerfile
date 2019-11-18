@@ -23,5 +23,3 @@ VOLUME  ["/var/lib/rally/data"]
 RUN mkdir -pv /opt/snafu
 COPY . /opt/snafu/
 
-RUN rally db recreate
-USER stack
