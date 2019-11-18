@@ -4,7 +4,7 @@ RUN yum update -y && \
     yum clean all && \
     rm -rf /var/cache/yum && \
     rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
-    yum install -y gcc gcc-c++ python2-devel python2-pip sudo && \
+    yum install -y gcc gcc-c++ python2-devel python2-pip sudo git && \
     pip install -U pip setuptools && \
     pip install --ignore-installed -U ipaddress && \
     pip install rally rally-openstack python-openstackclient elasticsearch \
